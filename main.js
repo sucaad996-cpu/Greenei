@@ -93,10 +93,11 @@ window.addEventListener('touchmove', (e) => {
     lastTouchY = e.touches[0].clientY;
   }
 });
-const clock = new THREE.Clock()
+const timer = new THREE.Timer();
+
 function animate() {
-  
-  const delta = clock.getDelta();
+ timer.update();
+  const delta = timer.getDelta();
   const moveSpeed = 5; // Adjust speed
 
   if (controls.isLocked || true) { // Use controls if needed
