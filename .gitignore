@@ -22,3 +22,9 @@ lerna-debug.log*
 # temp directory
 .temp
 .tmp
+
+# Ignore all JavaScript files
+*.js
+
+# But keep main.js at repository root
+!/main.js
