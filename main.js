@@ -1,4 +1,4 @@
-import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.185.0/three.module.js";
+import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.185.0/three.module.js';
  
  // --setup--
  const scene = new THREE.Scene();
@@ -94,9 +94,10 @@ window.addEventListener('touchmove', (e) => {
   }
 });
 const timer = new THREE.Timer();
-
 function animate() {
+ 
  timer.update();
+ 
   const delta = timer.getDelta();
   const moveSpeed = 5; // Adjust speed
 
